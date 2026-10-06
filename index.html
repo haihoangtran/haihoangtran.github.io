@@ -238,7 +238,9 @@ main { display: grid; gap: 64px; min-width: 0; }
 
   <!-- ===== Sidebar ===== -->
   <aside class="side" aria-label="Profile">
-    <div class="photo" role="img" aria-label="Photo of Hai H. Tran">HT</div>
+    <div class="photo" role="img" aria-label="Photo of Hai H. Tran">
+      <img src="my_image.png" alt="Photo of Hai H. Tran">
+    </div>
     <div class="who">
       <h1>Hai H. Tran</h1>
       <p class="role">Mobile Software Engineer · Flutter, iOS, Android</p>
@@ -253,11 +255,12 @@ main { display: grid; gap: 64px; min-width: 0; }
       <span class="label">Skills</span>
       <div class="side-skills">
         <div><b>Languages</b><span>Dart, Swift, Kotlin, JavaScript, Python</span></div>
-        <div><b>Mobile</b><span>Flutter, iOS, Android, Xcode, Android Studio, Gradle, BLoC/Cubit, Freezed, Platform Channels, WebView, Apple Pay, Google Pay, Biometric Authentication, REST API Integration</span></div>
-        <div><b>Testing and QA</b><span>Appium 2, Selenium, Selenium Grid, Flutter Integration Test, Unit and Widget Testing, TDD, Sauce Labs, API Mocking</span></div>
-        <div><b>CI/CD and release</b><span>GitLab CI/CD, GitHub Actions, Jenkins, TeamCity, fastlane, Feature Flags, Server-Driven Configuration, App Store and Google Play</span></div>
-        <div><b>Observability</b><span>Grafana Faro, OpenTelemetry, Distributed Tracing, W3C Trace Context, Real User Monitoring, Pendo, Google Analytics</span></div>
-        <div><b>AI, tools, practices</b><span>AI Code Review Agents, AI Agent Skills, Prompt Engineering, Jira, Confluence, Agile/Scrum, Code Review, On-Call and Incident Triage</span></div>
+        <div><b>Mobile</b><span>Flutter, BLoC / Cubit, Webview, iOS, Android, Xcode, Apple Pay, Google Pay</span></div>
+        <div><b>Observability</b><span>Grafana, Faro SDK, Pendo, Google Analytics</span></div>
+        <div><b>AI Tooling</b><span>Claude Code, Github Copilot, AI agent</span></div>
+        <div><b>CI/CD</b><span>Gitlab CI/CD, Github Action, TeamCity, fastlane</span></div>
+        <div><b>Testing</b><span>Appium, Selenium, Flutter Integration Test, Unit/Widget Testing, Sauce Labs</span></div>
+        <div><b>Project Tools</b><span>Jira, Confluence</span></div>
       </div>
     </div>
     <div class="side-block">
@@ -273,15 +276,15 @@ main { display: grid; gap: 64px; min-width: 0; }
     <section class="about" aria-labelledby="about-h">
       <div class="section-head"><span class="label" id="about-h">About</span></div>
       <p class="lead">I build Flutter apps for iOS and Android, and I make sure they ship well.</p>
-      <p>I have 11+ years in mobile: 5+ years building Flutter apps and 6+ years as an SDET building mobile test automation. I own mobile features end to end, from Flutter UI and native Swift/Kotlin integrations to REST API integration, testing, release, and production support for white-label banking apps used by 350+ financial institutions.</p>
-      <p>I'm strong in platform upgrades across many repositories, feature-flagged releases, and mobile observability with OpenTelemetry and distributed tracing. I also built Appium and Selenium frameworks from scratch and integrated them into CI/CD pipelines.</p>
+      <p>I have 11+ years in mobile: 5+ years building Flutter apps and 6+ years as an SDET building mobile test automation. I own end to end mobile features, from Flutter UI and native Swift/Kotlin integrations to REST API integration, testing, release, and production support for white-label banking apps used by 350+ financial institutions.</p>
+      <p>I'm strong in platform updates across many repositories, feature-flagged releases, and mobile observability with Faro SDK. I also built Appium and Selenium frameworks from scratch and integrated them into CI/CD pipelines.</p>
     </section>
 
     <section aria-labelledby="hl-h">
       <div class="section-head"><span class="label">Highlights</span><h2 id="hl-h">Work in numbers</h2></div>
       <div class="stats">
         <div class="stat"><span class="num">350+</span><p>financial institutions run white-label iOS and Android apps on the Flutter platform I helped build</p></div>
-        <div class="stat"><span class="num">24</span><p>repositories moved to Android API 36 in a single release, with zero customer disruption</p></div>
+        <div class="stat"><span class="num">24</span><p>repositories moved to Android API 36 in a single release, with building Dart command line</p></div>
         <div class="stat"><span class="num">~90%</span><p>lower telemetry cost from hash-based session sampling that sends 10% of sessions to the cloud</p></div>
         <div class="stat"><span class="num">360+</span><p>unit and widget test suites maintained alongside an Appium 2 end-to-end framework</p></div>
         <div class="stat"><span class="num">200+</span><p>automated HP Smart test cases run overnight in Jenkins, with results ready each morning</p></div>
@@ -314,86 +317,6 @@ main { display: grid; gap: 64px; min-width: 0; }
       </div>
     </section>
 
-    <section class="app-section" aria-labelledby="app-h">
-      <div class="app-copy">
-        <span class="label">App view</span>
-        <h2 id="app-h" style="font-size:1.7rem">The same profile, as a mobile app</h2>
-        <p>I spend my days on mobile UI, so here is this portfolio as a small app. Tap the tabs to move between Home, Work, Skills and Contact, and tap a job to expand it.</p>
-      </div>
-      <div class="phone">
-        <div class="app">
-          <div class="status" aria-hidden="true"><span>9:41</span><span class="island"></span><span>●●●</span></div>
-          <div class="appbar"><h3 id="app-title">Home</h3><span class="mini" aria-hidden="true">HT</span></div>
-          <div class="screens">
-            <div class="screen" id="scr-home" role="tabpanel" aria-label="Home">
-              <div class="card app-profile">
-                <div class="app-avatar" aria-hidden="true">HT</div>
-                <h4>Hai H. Tran</h4>
-                <span>Mobile Software Engineer · Flutter, iOS, Android</span>
-              </div>
-              <div class="app-stats">
-                <div class="card"><b>11+</b><span>years in mobile</span></div>
-                <div class="card"><b>350+</b><span>financial institutions served</span></div>
-                <div class="card"><b>24</b><span>repos upgraded in one release</span></div>
-                <div class="card"><b>~90%</b><span>lower telemetry cost</span></div>
-              </div>
-            </div>
-            <div class="screen" id="scr-work" role="tabpanel" aria-label="Work" hidden>
-              <details class="card" open>
-                <summary><span class="bar" style="background:var(--dev)"></span><span><b>Software Engineer, Mobile</b><small>Alkami Technology · 06/2021 – 10/2026</small></span><span class="chev" aria-hidden="true">›</span></summary>
-                <ul>
-                  <li>Built a Flutter platform spanning 30+ repositories for 350+ financial institutions</li>
-                  <li>Delivered bill pay, Zelle, remote check deposit, and Apple Pay/Google Pay</li>
-                  <li>Designed session sampling that cut telemetry cost by ~90%</li>
-                  <li>Led the Android API 36 upgrade across 24 repositories with zero customer disruption</li>
-                </ul>
-              </details>
-              <details class="card">
-                <summary><span class="bar" style="background:var(--test)"></span><span><b>Software Developer</b><small>Kforce → HP Inc. · 08/2017 – 06/2021</small></span><span class="chev" aria-hidden="true">›</span></summary>
-                <ul>
-                  <li>Extended Python Appium and Selenium frameworks for the HP Smart app</li>
-                  <li>Created 200+ automated test cases run overnight in Jenkins on every new build</li>
-                  <li>Built API tests across multiple HP printer classes</li>
-                </ul>
-              </details>
-              <details class="card">
-                <summary><span class="bar" style="background:var(--test)"></span><span><b>Test Engineer III</b><small>Beyondsoft → HP Inc. · 09/2014 – 08/2017</small></span><span class="chev" aria-hidden="true">›</span></summary>
-                <ul>
-                  <li>Built mobile test automation frameworks from scratch, adopted as the standard across HP's iOS and Android apps</li>
-                  <li>Automated build acceptance, localization, and functional tests in multiple languages</li>
-                </ul>
-              </details>
-              <details class="card">
-                <summary><span class="bar" style="background:var(--intern)"></span><span><b>Database Development Kit Developer, Intern</b><small>IHS Inc. · 05/2013 – 08/2013</small></span><span class="chev" aria-hidden="true">›</span></summary>
-                <ul><li>Wrote C# integration tests (Entity Framework 4.0, FitNesse) for a data-access SDK</li></ul>
-              </details>
-            </div>
-            <div class="screen" id="scr-skills" role="tabpanel" aria-label="Skills" hidden>
-              <div class="app-group"><h5>Mobile</h5><div class="app-chips"><span>Flutter</span><span>Dart</span><span>Swift</span><span>Kotlin</span><span>BLoC/Cubit</span><span>Platform Channels</span><span>Apple Pay</span><span>Google Pay</span></div></div>
-              <div class="app-group"><h5>Testing</h5><div class="app-chips"><span>Appium 2</span><span>Selenium Grid</span><span>Flutter Integration Test</span><span>TDD</span><span>Sauce Labs</span></div></div>
-              <div class="app-group"><h5>CI/CD</h5><div class="app-chips"><span>GitLab CI/CD</span><span>GitHub Actions</span><span>Jenkins</span><span>fastlane</span><span>Feature Flags</span></div></div>
-              <div class="app-group"><h5>Observability</h5><div class="app-chips"><span>Grafana Faro</span><span>OpenTelemetry</span><span>W3C Trace Context</span><span>RUM</span></div></div>
-              <div class="app-group"><h5>Tools</h5><div class="app-chips"><span>Jira</span><span>Confluence</span><span>AI Code Review Agents</span></div></div>
-            </div>
-            <div class="screen" id="scr-contact" role="tabpanel" aria-label="Contact" hidden>
-              <div class="card" style="font:400 .85rem/1.5 var(--body)">Open to remote roles and positions in Houston. Email is the fastest way to reach me.</div>
-              <div class="app-links">
-                <button type="button" data-email="hai.hg.tran@gmail.com" aria-label="Copy email address"><span>hai.hg.tran@gmail.com</span><span aria-hidden="true">⧉</span></button>
-                <a href="https://www.linkedin.com/in/hai-tran-1a972b78" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/haihoangtran" target="_blank" rel="noopener"><span>GitHub</span><span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </div>
-          <nav class="tabbar" role="tablist" aria-label="App sections">
-            <button class="tab" role="tab" aria-selected="true" aria-controls="scr-home" data-tab="home" data-title="Home"><span class="pill"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>Home</button>
-            <button class="tab" role="tab" aria-selected="false" aria-controls="scr-work" data-tab="work" data-title="Work"><span class="pill"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>Work</button>
-            <button class="tab" role="tab" aria-selected="false" aria-controls="scr-skills" data-tab="skills" data-title="Skills"><span class="pill"><svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></span>Skills</button>
-            <button class="tab" role="tab" aria-selected="false" aria-controls="scr-contact" data-tab="contact" data-title="Contact"><span class="pill"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>Contact</button>
-          </nav>
-        </div>
-      </div>
-    </section>
-
     <section aria-labelledby="xp-h">
       <div class="section-head"><span class="label">Experience</span><h2 id="xp-h">Where I've worked</h2></div>
       <div class="timeline">
@@ -403,16 +326,15 @@ main { display: grid; gap: 64px; min-width: 0; }
             <div class="job-head"><h3>Software Engineer, Mobile</h3><span class="dates">06/2021 – 10/2026</span></div>
             <p class="org">Alkami Technology</p>
             <ul>
-              <li>Built a Flutter platform spanning 30+ repositories that powers white-label iOS and Android banking apps for 350+ financial institutions</li>
-              <li>Delivered bill pay, Zelle, remote check deposit, and Apple Pay/Google Pay features so users can move money without leaving the app</li>
-              <li>Led Grafana Faro and OpenTelemetry instrumentation in the mobile apps, propagating W3C Trace Context so mobile sessions link to backend traces for faster incident triage</li>
-              <li>Designed hash-based session sampling so only 10% of user sessions send telemetry to the cloud, cutting telemetry cost by ~90%</li>
-              <li>Led the Android API 36 (targetSdk) upgrade across 24 repositories in a single release with zero customer disruption</li>
-              <li>Implemented feature flags to help enable gradual rollout and instant rollback without an app store release</li>
-              <li>Created shared Flutter packages that let feature teams ship independently and reduced duplicate code</li>
-              <li>Maintained 360+ unit and widget test suites and an Appium 2 end-to-end framework, catching regressions before release</li>
-              <li>Owned escalated production defects through on-call, from triage and root cause to hotfix, keeping live banking apps stable</li>
-              <li>Built AI code review agents, adopted across the team to speed up code reviews</li>
+              <li>Built a Flutter platform spanning 30+ repositories that powers white-label iOS and Android banking apps for 350+ financial institutions</li>li>
+              <li>Integrated the Zelle SDK, remote check deposit, and Apple/Google Pay into mobile webviews, enabling users to complete seamless transactions without leaving the app.</li>
+              <li>Led mobile observability with integrating and upgrading Grafana Faro SDK for faster triage</li>
+              <li>Designed hash-based session sampling (10%), cutting telemetry cost by 90%</li>
+              <li>Led the Android API 36 upgrade across 24 repositories in one release with building Dart command line</li>
+              <li>Implemented feature flags to enable rollout and rollback without an app store release</li>
+              <li>Maintained 360+ unit/widget test suites and an Appium framework, catching regressions before release</li>
+              <li>Owned escalated production defects from triage and root cause to hot-fix via on-call, keeping live banking apps stable</li>
+              <li>Built AI code review agents, adopted across the team to speed up review</li>
             </ul>
           </div>
         </article>
@@ -422,12 +344,12 @@ main { display: grid; gap: 64px; min-width: 0; }
             <div class="job-head"><h3>Software Developer</h3><span class="dates">08/2017 – 06/2021</span></div>
             <p class="org">Kforce, contract to HP Inc.</p>
             <ul>
-              <li>Extended Python Appium and Selenium frameworks to support continuous releases of the HP Smart app on iOS and Android</li>
+              <li>Extended Python Appium/Selenium frameworks to support continuous releases of the HP Smart app</li>
               <li>Automated functional, build acceptance, printer discovery, and analytics tests, reducing manual regression testing</li>
               <li>Ran parallel tests across devices and languages on Selenium Grid, shortening test cycles</li>
               <li>Created 200+ automated test cases scheduled in Jenkins to run overnight on every new build, giving teams release quality results by the next morning</li>
               <li>Built API tests across multiple HP printer classes, catching app-to-printer bugs before release</li>
-              <li>Trained teammates and partnered with QA and development teams to expand test coverage across releases</li>
+              <li>Trained teammates and partnered with QA and development teams, expanding test coverage across releases</li>
             </ul>
           </div>
         </article>
@@ -437,7 +359,7 @@ main { display: grid; gap: 64px; min-width: 0; }
             <div class="job-head"><h3>Test Engineer III</h3><span class="dates">09/2014 – 08/2017</span></div>
             <p class="org">Beyondsoft, contract to HP Inc.</p>
             <ul>
-              <li>Built mobile test automation frameworks from scratch, adopted as the standard across HP's iOS and Android apps</li>
+              <li>Built mobile test frameworks from scratch, adopted as the standard across HP’s iOS and Android apps</li>
               <li>Automated build acceptance, localization, and functional tests in multiple languages on phones and tablets</li>
               <li>Created internal tools that sped up test development and execution</li>
               <li>Triaged test results and filed defects, keeping partner teams informed on release quality</li>
@@ -449,7 +371,7 @@ main { display: grid; gap: 64px; min-width: 0; }
           <div>
             <div class="job-head"><h3>Database Development Kit Developer, Intern</h3><span class="dates">05/2013 – 08/2013</span></div>
             <p class="org">IHS Inc.</p>
-            <ul><li>Wrote C# integration tests (Entity Framework 4.0, FitNesse) for a data-access SDK and documented its usage</li></ul>
+            <ul><li>Wrote C# integration tests (Entity Framework 4.0, FitNesse) for a data-access SDK and documented it</li></ul>
           </div>
         </article>
       </div>
@@ -458,7 +380,7 @@ main { display: grid; gap: 64px; min-width: 0; }
     <section class="contact" aria-labelledby="ct-h">
       <span class="label" style="color:inherit;opacity:.7">Contact</span>
       <h2 id="ct-h">Hiring for a Flutter or mobile role?</h2>
-      <p>I'm open to remote roles and positions in Houston. Email is the fastest way to reach me.</p>
+      <p>I'm open to remote roles. Email is the fastest way to reach me.</p>
       <div class="links">
         <button class="chip" type="button" data-email="hai.hg.tran@gmail.com" aria-label="Copy email address"><span>hai.hg.tran@gmail.com</span><span aria-hidden="true">⧉</span></button>
         <a class="chip" href="https://www.linkedin.com/in/hai-tran-1a972b78" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
